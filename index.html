@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal AgroIA - Início</title>
+    <style>
+        :root { 
+            --verde-agro: #0d5a20; 
+            --verde-claro: #ffeb51; 
+            --fundo: #f2e8e8; 
+        }
+        
+        body { 
+            font-family: sans-serif; 
+            line-height: 1.6; 
+            background: var(--fundo); 
+            margin: 0; 
+            color: #000000; 
+        }
+        
+        header { 
+            background: var(--verde-agro); 
+            color: rgb(115, 238, 63); 
+            padding: 60px 20px; 
+            text-align: center; 
+        }
+        
+        header h1 { margin: 0; font-size: 2.5em; }
+        header p { margin-top: 10px; opacity: 0.9; }
+
+        nav { 
+            background: #faf7f7; 
+            padding: 10px; 
+            text-align: center; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
+        }
+        
+        nav a { 
+            margin: 0 15px; 
+            text-decoration: none; 
+            color: var(--verde-agro); 
+            font-weight: bold; 
+            transition: 0.3s; 
+        }
+        
+        nav a:hover { color: #4caf50; }
+
+        .container { max-width: 1000px; margin: 30px auto; padding: 0 20px; }
+        
+        .hero { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 15px; 
+            text-align: center; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            margin-bottom: 30px; 
+        }
+        
+        .hero img { 
+            width: 100%; 
+            max-width: 800px; 
+            border-radius: 10px; 
+            margin-top: 20px; 
+        }
+
+        .noticias-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px; 
+        }
+        
+        .card { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05); 
+            border-top: 5px solid var(--verde-claro); 
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        footer { text-align: center; padding: 40px; color: #777; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AGRO<span style="color: var(--verde-claro)">TECH</span> IA</h1>
+    <p>O seu portal de notícias sobre a tecnologia que alimenta o mundo</p>
+</header>
+
+<nav>
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre a IA no Agro</a>
+    <a href="drones.html">Drones e Robótica</a>
+</nav>
+
+<div class="container">
+    <div class="hero">
+        <h2>Bem-vindo ao Futuro do Campo</h2>
+        <p>A agricultura inteligente está transformando a forma como plantamos e colhemos. Explore nossas abas para entender como os algoritmos e robôs estão ajudando produtores de todo o mundo.</p>
+        <img src="https://apasem.com.br/wp-content/uploads/2024/05/8e6a9b6fe846492887a5ae9ca88f8a22_858x483.jpg" alt="Drones no campo">
+    </div>
+
+    <div class="noticias-grid">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnnXCIpU9nIwqbbe3UcAAjFTGrdhA6MO5prA&s" alt="Agricultura Familiar">
+            <h3>Agricultura Familiar</h3>
+            <p>A tecnologia ajuda o pequeno produtor a organizar sua colheita e garantir o sustento de sua família com mais eficiência.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.jornaldocomercio.com/_midias/jpg/2022/03/28/slc_paiaguas_lourenco_furtado-9576321.jpg" 
+            <h3>📈 Produtividade em Alta</h3>
+            <p>Fazendas que utilizam IA para monitorar o solo relatam um aumento de até 30% na colheita final.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgRgXBgfMBsk2x7kK6ywJsw6b53x0KqI04Zg&s" 
+            <h3>💧 Sustentabilidade</h3>
+            <p>Sensores inteligentes ajudam a economizar milhões de litros de água todos os anos através da irrigação de precisão.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 AgroTech IA - Criado por quem entende de futuro.</p>
+</footer>
+
+</body>
+</html>
